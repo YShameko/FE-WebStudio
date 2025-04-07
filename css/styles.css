@@ -150,18 +150,16 @@ body {
     overflow: hidden;
 }
 
-.do-card img,
-.team-card img 
- {
+.do-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 3px solid transparent;
 }
 
-.do-card img:hover,
-.team-card:hover,
-.portfolio-card:hover {
-    border: 3px solid #2196F3;
+.team {
+    background-color: #F5F4FA;
+    padding: 94px 215px;
 }
 
 .team-cards {
@@ -170,23 +168,32 @@ body {
 }
 
 .team-card {
-    min-height: 368px;
-    display: flex;
-    flex-direction: column;
+    /* height: 368px; */
+    /* display: flex;
+    flex-direction: column; */
     border: 1px dotted #757575;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-                 /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0 2px 1px 0 #00000033;
 }
+
+.team-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border: 3px solid transparent;
+ }
+
+ .team-card-pad {
+    padding: 30px 24px;
+ }
 
 .team-card-name {
     font-size: 16px;
     font-weight: 500;
     text-align: center;
     color: #212121;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .team-card-jobtitle {
@@ -194,8 +201,16 @@ body {
     font-weight: 400;
     text-align: center;
     color: #757575;
-    padding-bottom: 30px;
 }
+
+.do-card img:hover,
+.team-card:hover,
+.portfolio-card:hover {
+    border-color:#2196F3;
+    background-color: #bfbec3;
+    cursor: pointer;
+}
+
   /* F O O T E R */
 .footer {
     padding: 60px 0;
@@ -203,27 +218,30 @@ body {
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    gap: 9px;
 }
 
 .footer-logo {
-    margin-bottom: 11px;
+    margin-bottom: 20px;
 }
 
 .footer-info {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-addr {
+    color: #FFFFFF;
 }
 
 .footer-info a {
     color: #FFFFFF99;
     text-decoration: none;
+    gap: 9px;
 }
 
   /* P O R T F O L I O */
@@ -232,6 +250,7 @@ body {
     padding-top: 94px;
     padding-bottom: 50px;
     justify-content: center;
+    gap: 8px;
 }
 
 .portfolio-filters-btn {
@@ -240,7 +259,6 @@ body {
     line-height: 26px;
     text-align: center;
     padding: 6px 27px;
-    gap: 8px;
     background-color: #F5F4FA;
     border-radius: 4px;
 }
@@ -253,6 +271,7 @@ body {
 .portfolio-filters-btn:hover {
     color: #FFFFFF;
     background: #2196F3;
+    cursor: pointer;
 }
 
 .portfolio-cards {
@@ -273,18 +292,28 @@ body {
     object-fit: cover;
 }
 
+.portfolio-card-pad {
+    padding: 20px 24px;
+}
+
 .portfolio-card-name {
     font-size: 18px;
     font-weight: 700;
     line-height: 36px;
-    padding: 20px 24px 4px 24px;
     color: #212121;
+    margin-bottom: 4px;
 }
 
 .portfolio-card-filter {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    padding: 0 24px 20px 24px;
     color: #757575;
+}
+
+.contacts {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 70px;
 }
