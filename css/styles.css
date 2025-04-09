@@ -316,7 +316,8 @@ body {
     line-height: 28px;
     position: absolute;
     inset: 0;
-    padding: 63px 24px;
+    align-items: center;
+    padding: 24px;
     display: none;
 }
 
@@ -329,7 +330,7 @@ body {
 .portfolio-card:hover .portfolio-card-hidden-part {
     /* border-color:#2196F3;
     cursor: pointer; */
-    display: block;
+    display: flex;
 }
 
 .portfolio-card-pad {
