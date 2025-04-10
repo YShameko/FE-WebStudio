@@ -328,8 +328,6 @@ body {
 }
 
 .portfolio-card:hover .portfolio-card-hidden-part {
-    /* border-color:#2196F3;
-    cursor: pointer; */
     display: flex;
 }
 
@@ -357,4 +355,40 @@ body {
     font-weight: 700;
     text-align: center;
     padding: 70px;
+}
+
+.header-filters,
+.header-filters-menu {
+    position: relative;
+}
+
+.header-filters > ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+    padding: 15px 0 0;
+	display: none;
+    background-color: #F5F4FA;
+}
+
+.header-filters:hover > ul,
+.header-filters-menu:hover > ul {
+	display: block;
+    border-color:#EEEEEE;
+    box-shadow: 1px 4px 6px 0 #00000033;
+}
+
+.header-filters-menu,
+.header-filters-submenu {
+    padding: 10px 20px;
+}
+
+.header-filters-menu > ul {
+	position: absolute;
+	top: 0;
+	left: -180%;
+	padding: 15px 0 0;
+	display: none;
+    background-color: #F5F4FA;
+    z-index: 5;
 }
