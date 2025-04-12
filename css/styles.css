@@ -356,7 +356,7 @@ body {
     text-align: center;
     padding: 70px;
 }
-
+/* ----------------------------------------------------------------------------------------------------------------- */
 .header-filters,
 .header-filters-menu {
     position: relative;
@@ -386,9 +386,97 @@ body {
 .header-filters-menu > ul {
 	position: absolute;
 	top: 0;
-	left: -180%;
+	right: 100%;
 	padding: 15px 0 0;
 	display: none;
     background-color: #F5F4FA;
     z-index: 5;
+    white-space: nowrap;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.more-info {
+    position: relative;
+}
+
+.more-info .contacts-info {
+    position: absolute;
+	top: 100%;
+	left: 50%;
+	padding: 15px 15px;
+    line-height: 30px;
+    background-color: #F5F4FA;
+    border-color:#EEEEEE;
+    box-shadow: 1px 4px 6px 0 #00000033;
+    white-space: nowrap;
+	display: none;
+}
+
+.more-info:hover .contacts-info {
+	display: block;
+}
+
+/* --------------------------------  BURGER ------------------------------------------ */
+
+.burger {
+	width: 34px;
+	height: 20px;
+    color: #2196F3;
+    background: #F5F4FA;
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	cursor: pointer;
+}
+
+.burger::before,
+.burger::after,
+.burger span {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: #2196F3;
+}
+
+.burger::after {
+	top: auto;
+	bottom: 0;
+}
+
+.burger span {
+	top: 50%;
+	margin-top: -2px;
+}
+html, body {
+    height: 100%;
+}
+
+.left-panel {
+    position: relative;
+    width: 200px;
+}
+
+.left-panel-text {
+    position: absolute;
+	top: 50px;
+	left: 0;
+    width: 100%;
+    height: 90vh;
+	padding: 15px 15px;
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #ccc;
+    /* white-space: nowrap; */
+	display: none;
+    z-index: 5;
+}
+
+.left-panel:hover .left-panel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
