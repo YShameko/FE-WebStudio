@@ -1,0 +1,133 @@
+@import url('reset.css');
+/* =================================================================================== */
+/* .trans {
+    width: 120px;
+    height: 60px;
+    margin: 30px auto;
+    background-color: #2F303A;
+    transition: all 1s linear;
+}
+
+.trans:hover {
+    background-color: #2196F3;
+    transition: all 1s linear;
+}
+
+.trans::before {
+    content: '';
+    position: absolute;
+    background-color: #2F303A;
+    transition: all 1s linear;
+}
+  */
+/* =================================================================================== */
+/* from center to borders */
+/* .trans {
+    position: relative;
+    width: 120px;
+    height: 60px;
+    margin: 30px auto;
+    background-color: #2F303A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trans a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.trans::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #2196F3;
+    transition: all 0.7s linear;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.trans:hover::before {
+    width: 300%;
+    height: 300%;
+} */
+
+/* =================================================================================== */
+/* from top to bottom */
+/* .trans {
+    position: relative;
+    width: 120px;
+    height: 60px;
+    margin: 30px auto;
+    background-color: #2F303A;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trans::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #2196F3;
+    transition: height 0.5s ease;
+    z-index: -1;
+}
+
+.trans:hover::before {
+    height: 100%;
+} */
+
+/* =================================================================================== */
+/* from top left to bottom right border*/
+.trans a {
+    color: blue;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.trans {
+    position: relative;
+    width: 120px;
+    height: 60px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    border: 1px solid #AFB1B8;
+    /* border: 1px solid transparent; */
+}
+
+.trans::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    clip-path: polygon(
+        0% 0%, 0% 0%, 0% 0%, 0% 0%
+    );
+    transition: clip-path 1s linear;
+}
+
+.trans:hover::before {
+    clip-path: polygon(
+        0% 0%, 100% 0%, 100% 100%, 0% 100%
+    );
+}
