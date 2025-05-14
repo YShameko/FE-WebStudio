@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <div class="login-subcont">
+                <div class="login-switch">
+                    <input type="checkbox" class="login-switch-input hidden" id="lgn-switch">
+                    <label for="lgn-switch" class="login-switch-label">
+                        <span>Login</span>
+                        <span>Register</span>
+                    </label>
+                </div>
+                <form action="#" method="post" class="login-form">
+                    <h1 class="login-form-title">
+                        Login
+                    </h1>
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="password" name="password" placeholder="Password">
+                    <div class="login-form-remember-line">
+                        <input type="checkbox" name="remember" id="remember" class="login-form-remember-check hidden"> 
+                        <label for="remember" class="login-form-remember-label">Remember me</label> 
+                        <span  class="login-form-forgot">
+                            <a href="">Forgot password?
+                            </a>    
+                        </span>
+                    </div>
+                    <button type="submit" class="login-form-btn-wide">
+                        Login
+                    </button>
+
+                </form>
+                <div class="login-register">
+                    <span class="login-register-text">Don't have an account yet?</span>
+                    <span class="login-register-link">
+                        <a href="#">
+                            Register
+                        </a>
+                    </span>
+                </div>
+                <p class="login-login">
+                    Or login
+                </p>
+                <div class="login-social">
+                    <ul class="login-social-icons">
+                        <li class="login-social-li">
+                            <a href="https://instagram.com" target="_blank">
+                                <svg>
+                                    <use href="img/sprites.svg#instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="login-social-li">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <svg>
+                                    <use href="img/sprites.svg#facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="login-social-li">
+                            <a href="https://ua.linkedin.com/" target="_blank">
+                                <svg>
+                                    <use href="img/sprites.svg#linkedin">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
