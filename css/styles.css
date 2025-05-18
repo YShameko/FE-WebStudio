@@ -769,7 +769,36 @@ body {
 
 .login-wrapper {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../img/login-bgd.png') no-repeat 50%/cover;   
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                url('../img/login-bgd.png') no-repeat center/cover;
+}
+
+.login-container {
+    margin-left: auto;
+    width: 496px;
+    height: 100%;
+    background-color: rgba(233, 233, 233, 0.45);
+    backdrop-filter: blur(10px);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-subcont {
+    margin: auto 0;
+    padding: 60px 0;
+    width: 340px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.login-switch {
+    border: 1px solid #325480;
+    height: 36px;
+    border-radius: 30px;
+    border-width: 1px;
+    display: flex;
 }
 
 /* .login-switch-input {
@@ -831,30 +860,6 @@ body {
     border-radius: 30px;
 }
 
-.login-switch {
-    border: 1px solid #325480;
-    height: 36px;
-    border-radius: 30px;
-    border-width: 1px;
-    display: flex;
-}
-
-.login-container {
-    margin-left: auto;
-    width: 496px;
-    height: 100%;
-    overflow: auto;
-    backdrop-filter: blur(10px);
-    background-color: #E9E9E973;
-}
-
-.login-subcont {
-    width: 340px;
-    margin: 0 auto;
-    padding: 60px 0;
-    text-align: center;
-}
-
 .login-form {
     text-align: center;
 }
@@ -881,7 +886,6 @@ body {
 }
 
 .login-form-title {
-    font-family: Roboto;
     font-weight: 400;
     font-size: 30px;
     line-height: 100%;
@@ -973,8 +977,6 @@ body {
 }
 
 .login-register-link {
-    font-family: Roboto;
-    font-weight: 400;
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 0%;
